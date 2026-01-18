@@ -7,6 +7,7 @@
 body
 {
     background-color: black;
+    color: white;
 }
 
 
@@ -15,10 +16,7 @@ body
   font-optical-sizing: auto;
 }
 
-header
-{
-    background-color: black;
-}
+
 
 nav{
     display: flex;
@@ -26,7 +24,7 @@ nav{
     max-width: 1060px;
     margin: 0 auto;
     align-items: center;
-    margin-top: 57px;
+    padding-top: 57px;
 }
 
 nav>p
@@ -45,6 +43,7 @@ nav>p
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 25px;
+    padding: 3px;
     
 }
 
@@ -75,4 +74,275 @@ nav>p
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bold;
+}
+
+nav>span{
+        margin-right: 10px;
+        display: none;
+}
+
+/* Banner section */
+.banner_container
+{
+    display: flex;
+    /* border: 2px solid white; */
+    max-width: 1040px;
+    margin:  0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.banner_container .banner_content_text
+{
+    color: white;
+    max-width: 520px;
+}
+
+.banner_container .banner_content_text h1
+{
+    font-size: 4.87rem;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.banner_container .banner_content_text p
+{
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 28px;
+}
+
+.banner_container .banner_content_text .join_club
+{
+   background-color: #E6533C;
+   border-radius: 39px;
+   color: white;
+   max-width: 224px;
+   font-weight: 600;
+   font-size: 1rem;
+   padding: 18px 46px;
+   border: none;
+}
+
+.banner_container .banner_content_text .download_now
+{
+    background-color: black;
+    color: white;
+    padding: 16px 48px;
+    font-size: 1rem;
+    max-width: 224px;
+    border: 1px solid white;
+    border-radius: 39px;
+    font-weight: 600;
+
+}
+
+.banner_container .banner_content_image img
+{
+   max-width: 349px;
+   max-height: 580px;
+}
+
+.banner_container .banner_content_image
+{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.tooltip{
+    color: white;
+    padding: 17px 23px 16px 24px;
+    position:absolute;
+    top: 125px;
+    right: -54px;
+    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.237);
+}
+
+.tooltip h2{
+    font-size: 2.5rem;
+    line-height: 40px;
+    color: white;
+}
+.tooltip p
+{
+    font-size: .81rem;
+    color: rgba(255, 255, 255, 0.486);
+}
+.ball
+{
+    width: 50px;
+    height: 50px;
+    background-color: #E6533C;
+    border-radius: 50%;
+}
+
+.tooltip_2{
+    display: flex;
+    gap: 12px ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    position:absolute;
+    top:400px;
+    left: -74px;
+    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.237);
+}
+
+.tooltip_2 h2{
+     font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: white;
+}
+
+.playicon
+{
+    color: white;
+    position: absolute;
+    left: -74px;
+    bottom: 300px;
+}
+
+/* Change Your Habits Section  */
+
+.change_container
+{
+    max-width: 1044px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.change_header
+{
+    max-width: 871px ;
+    margin: 0 auto;
+}
+
+.change_header h1
+{
+     font-size: 3rem;
+     line-height: 120%;
+     padding-bottom: 14px;
+      
+}
+
+.change_header p
+{
+    font-size: 14px ;
+    color: rgba(255, 255, 255, 0.487);
+    line-height: 24px;
+}
+
+
+.change_cardbox
+{
+    display: flex;
+    margin-top: 58px;
+
+}
+
+.change_card img
+{
+   height: 180px;
+   font-weight: 180px;
+   border-radius: 50%;
+   margin-bottom: 50px;
+}
+
+.change_card h4
+{
+    font-size: 1.125rem;
+    color: white;
+    line-height: 120%;
+    margin-bottom: 6px;
+
+}
+
+.change_card p
+{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+header
+{
+ background: linear-gradient(
+  360deg,
+  rgba(19, 18, 18, 0.242) 0%,
+  rgba(66, 66, 66, 0.615) 100%
+);
+
+}
+
+
+/* Responsive Codes */
+
+@media screen and (max-width:500px)
+{
+    .nav_buttons 
+    {
+        display: none;
+    }
+    nav>span{
+        margin-right: 10px;
+        display: inline;
+    }
+    nav>p
+    {
+        margin-left: 10px
+    }
+    
+    /* Banner */
+    .banner_container
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner_content_text .banner_content_image
+    {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .download_now
+    {
+        margin-top: 20px;
+    }
+
+    .tooltip_2{
+       
+        left: 0;
+    }
+
+    .tooltip
+    {
+        right: 0;
+    }
+    .change_container
+    {
+        padding-left: 28px;
+        padding-right: 29px;
+    }
+    .change_header h1
+    {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .change_cardbox
+    {
+        margin-top: 58px;
+        flex-direction: column;
+        gap: 40px;
+         
+    }
 }
