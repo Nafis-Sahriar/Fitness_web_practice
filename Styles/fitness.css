@@ -281,6 +281,126 @@ header
 
 }
 
+/* Run Extra Section  */
+
+.run_container
+{
+    max-width: 1060px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    background-color:rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    margin-bottom: 100px;
+}
+
+.run_contents
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 165px;
+
+}
+
+.run_text
+{
+   margin-top: 41px;
+   margin-bottom: 40px;
+   margin-left: 54px ;
+   max-width: 443px;
+}
+
+.run_text h1
+{
+    font-size: 3rem ;
+    line-height: 120%;
+}
+
+.run_text p
+{
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 14px;
+    padding-bottom: 34px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.run_text button
+{
+    background-color: #E6533C;
+    border: none;
+    font-size: 1.125rem ;
+    color: white;
+    font-weight: 600;
+    padding: 16px 71px;
+    border-radius: 42px;
+}
+
+
+.run_image img
+{
+    border-radius: 18px;
+    margin-top: 30px ;
+    margin-right: 32px;
+    margin-bottom: 29px;
+}
+
+/* Training Container */
+
+.train_container
+{
+    /* border: 1px solid white; */
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.tc_header
+{
+    margin-bottom: 58px;
+}
+
+.tc_header h1
+{
+    font-size:3rem;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+
+.tc_header p
+{
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tc_image
+{
+    display: grid;
+    height: 405px;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: repeat(2,200px);
+    margin-bottom: 88px;
+}
+
+.tc_image img{
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.tc_image .box2
+{
+    background-color: rgb(214, 117, 117);
+    grid-column: 2 / span 2;
+}
+
+.box4
+{
+    background-color: #ffffffb2;
+    grid-column: 1 / span 2;
+}
+
+
+
 
 /* Responsive Codes */
 
@@ -345,4 +465,53 @@ header
         gap: 40px;
          
     }
+    .run_container 
+    {
+        margin: 65px 20px;
+    }
+
+    .run_contents
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      
+    }
+
+    .run_text h1
+    {
+        font-size: 2rem;
+        text-align: left;
+        font-weight: bold;
+        line-height: 120%;
+    }
+
+    .run_contents .run_text
+    {
+        margin: 0 auto;
+        padding-top: 30px;
+        max-width: 287px;
+        text-align:left;
+    }
+
+    .run_contents .run_image
+    {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .run_text button
+    {
+        width: 100%;
+    background-color: #E6533C;
+    border: none;
+    font-size: 1.125rem ;
+    color: white;
+    font-weight: 600;
+    padding: 16px 71px;
+    border-radius: 42px;
+   }
+
+    
 }
